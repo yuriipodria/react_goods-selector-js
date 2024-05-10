@@ -44,7 +44,7 @@ export const App = () => {
             >
               <td>
                 <button
-                  data-cy="RemoveButton"
+                  data-cy={good === selected ? 'RemoveButton' : 'AddButton'}
                   type="button"
                   className={cn('button', {
                     'is-info': good === selected,
